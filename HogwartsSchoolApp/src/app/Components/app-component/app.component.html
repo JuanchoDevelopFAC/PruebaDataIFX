@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <span>{{title | uppercase}}</span>
+</mat-toolbar>
+<section class="buttons">
+  <div>
+    <button class="buttons__personajes btn btn-primary" [matMenuTriggerFor]="menu" #menuTrigger>PERSONAJES</button>
+    <mat-menu #menu="matMenu">
+      <button class="buttons__menu btn" mat-menu-item (click)="openSchool('slytherin')">Slytherin</button>
+      <button class="buttons__menu btn" mat-menu-item (click)="openSchool('gryffindor')">Gryffindor</button>
+      <button class="buttons__menu btn" mat-menu-item (click)="openSchool('ravenclaw')">Ravenclaw</button>
+      <button class="buttons__menu btn" mat-menu-item (click)="openSchool('hufflepuff')">Hufflepuff</button>
+    </mat-menu>
+    <button class="buttons__personajes btn btn-primary" (click)="openStudents()">ESTUDIANTES</button>
+    <button class="buttons__personajes btn btn-primary" (click)="openStaff()">PROFESORES</button>
+  </div>
+</section>

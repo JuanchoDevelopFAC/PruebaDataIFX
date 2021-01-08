@@ -1,0 +1,38 @@
+mat-card {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: royalblue;
+  color: white;
+}
+
+.buttons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+  &__personajes {
+    width: 440px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  &__menu {
+    border: none;
+    text-decoration: none;
+    width: 400px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
